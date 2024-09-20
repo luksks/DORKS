@@ -1,155 +1,151 @@
-Bien sûr ! Voici la liste de Google Dorks adaptée pour la chaîne de caractères "XXXXXX" au lieu du domaine spécifique `XXXXXX.fr` :
-
 ### Recherche d'informations sensibles
 - **Fichiers de configuration ou de sauvegarde :**
   
   intext:"XXXXXX" filetype:env "DB_PASSWORD"
-  ```
+ 
   
   intext:"XXXXXX" filetype:sql "password"
-  ```
+
   
   intext:"XXXXXX" filetype:log "password"
-  ```
+
 
 - **Pages d'administration :**
   
   intitle:"index of" "XXXXXX" "admin"
-  ```
+
   
   inurl:admin intext:"XXXXXX"
-  ```
+
   
   inurl:login intext:"XXXXXX"
-  ```
+
 
 ### Recherche de fichiers spécifiques
 - **Fichiers Excel contenant des informations sensibles :**
   
   intext:"XXXXXX" filetype:xls inurl:"sensitive"
-  ```
+
   
   intext:"XXXXXX" filetype:xlsx inurl:"credentials"
-  ```
+
 
 - **Fichiers PDF contenant des informations sensibles :**
   
   intext:"XXXXXX" filetype:pdf "confidential"
-  ```
+
   
   intext:"XXXXXX" filetype:pdf "restricted"
-  ```
+
 
 ### Recherche d'erreurs et de divulgations d'informations
 - **Pages affichant des erreurs d'application :**
   
   intitle:"index of" "XXXXXX" "error_log"
-  ```
+
   
   intext:"XXXXXX" "PHP Parse error" | "PHP Warning" | "PHP Error"
-  ```
+
 
 - **Divulgation d'informations dans les erreurs de SQL :**
   
   intext:"XXXXXX" intext:"sql syntax near" | intext:"syntax error has occurred" | intext:"incorrect syntax near"
-  ```
+
 
 ### Recherche d'informations sur des serveurs et des logiciels
 - **Trouver des serveurs spécifiques ou des versions de logiciels :**
   
   intitle:"index of" inurl:ftp intext:"XXXXXX"
-  ```
+
   
   intext:"XXXXXX" "Apache/2.4.49 (Unix)"
-  ```
+
 
 - **Détecter des caméras ou des dispositifs IoT :**
   
   intitle:"webcamXP 5" intext:"XXXXXX"
-  ```
+
   
   inurl:"axis-cgi/mjpg" intext:"XXXXXX"
-  ```
+
 
 ### Recherche de paramètres exposés dans les URLs
 - **Paramètres de requête exposant des informations sensibles :**
   
   inurl:"?id=" intext:"XXXXXX"
-  ```
+
   
   inurl:"?q=" intext:"XXXXXX"
-  ```
+
 
 ### Combinaison de Dorks
 - **Combiner plusieurs opérateurs pour affiner la recherche :**
   
   intext:"XXXXXX" filetype:pdf "confidential"
-  ```
+
   
   intitle:"index of" "backup" intext:"XXXXXX" -html -htm -php -asp -jsp
-  ```
+
 
 ### Recherche de Google Docs
 - **Fichiers Google Docs contenant des informations sensibles :**
   
   intext:"XXXXXX" inurl:drive.google.com filetype:doc
-  ```
+
   
   intext:"XXXXXX" inurl:docs.google.com filetype:doc
-  ```
+
   
   intext:"XXXXXX" inurl:drive.google.com filetype:docx
-  ```
+
   
   intext:"XXXXXX" inurl:docs.google.com filetype:docx
-  ```
+
 
 ### Recherche de Google Sheets
 - **Fichiers Google Sheets contenant des informations sensibles :**
   
   intext:"XXXXXX" inurl:drive.google.com filetype:xls
-  ```
+
   
   intext:"XXXXXX" inurl:docs.google.com filetype:xls
-  ```
+
   
   intext:"XXXXXX" inurl:drive.google.com filetype:xlsx
-  ```
+
   
   intext:"XXXXXX" inurl:docs.google.com filetype:xlsx
-  ```
+
 
 ### Recherche de Google Slides
 - **Fichiers Google Slides contenant des informations sensibles :**
   
   intext:"XXXXXX" inurl:drive.google.com filetype:ppt
-  ```
+
   
   intext:"XXXXXX" inurl:docs.google.com filetype:ppt
-  ```
+
   
   intext:"XXXXXX" inurl:drive.google.com filetype:pptx
-  ```
+
   
   intext:"XXXXXX" inurl:docs.google.com filetype:pptx
-  ```
+
 
 ### Recherche de Google Forms
 - **Formulaires Google contenant des informations sensibles :**
   
   intext:"XXXXXX" inurl:drive.google.com filetype:form
-  ```
+
   
   intext:"XXXXXX" inurl:docs.google.com filetype:form
-  ```
+ 
 
 ### Recherche de fichiers Google divers
 - **Recherche générale de fichiers Google Drive :**
   
   intext:"XXXXXX" inurl:drive.google.com
-  ```
+
   
   intext:"XXXXXX" inurl:docs.google.com
-  ```
 
-Ces Google Dorks devraient te permettre de rechercher efficacement des documents liés à "XXXXXX" sur le web. Assure-toi d'utiliser ces informations de manière éthique et légale. Si tu as besoin d'autres types de dorks ou de plus de détails, fais-le moi savoir !
